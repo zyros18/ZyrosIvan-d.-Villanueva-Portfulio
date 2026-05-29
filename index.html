@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <button id="theme-toggle">Dark Mode</button>
+        <h1>ZYROS IVAN VILLANUEVA</h1>
+        <p>Junior Systems Developer</p>
+        <img src="zyros.jpg" alt="Profile Picture" class="profile-img">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section id="About" class="about-box">
+<h2>About Me</h2>
+<p>
+    A creative system thinker who loves turning ideas into interactive experiences.
+    My passion lies in designing and refining digital systems that feel alive, intuitive, and human‑centered.
+    Whether it’s crafting responsive interfaces or optimizing backend logic, I see technology as a canvas for creativity.
+</p>
+</section>
+
+
+        <section id="Skills" class="about-box h2">
+            <h2>Technical Proficiencies</h2>
+            <div class="skills-grid">
+                <div class="skill-item">HTML5 / CSS3</div>
+                <div class="skill-item">JavaScript (ES6+)</div>
+                <div class="skill-item">Java / Backend</div>
+                <div class="skill-item">Python / Version Control</div>
+            </div>
+        </section>
+
+        <section id="Contact" class="about-box">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="email" id="email" placeholder="Your Email" required>
+                <span id="emailError" class="error"></span>
+                <span id="phoneError" class="error"></span>
+                <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+                <span id="messageError" class="error"></span>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+<p>&copy; 2026 Zyros Ivan Villanueva |
+    <a href="mailto:zyrosivanvillanuevadavid@gmail.com">Email</a> |
+    <a href="https://linkedin.com/in/zyrosivanvillanuevadavid">LinkedIn</a> |
+    <a href="https://github.com/zyros18">GitHub</a>
+</p>
+</footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

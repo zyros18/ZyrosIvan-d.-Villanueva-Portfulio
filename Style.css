@@ -1,0 +1,186 @@
+:root {
+    --bg-color: #177074;
+    --text-color: #ffe7e7;
+    --accent-color: #33c5c5;
+    --card-bg: #514b4b;
+
+}
+
+body.dark-theme {
+    --bg-color: #050202;
+    --text-color: #e0e0e0;
+    --accent-color: #bb86fc;
+    --card-bg: #3f3d3d;
+    
+}
+
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+header, nav, section, footer {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #20292b;
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+#theme-toggle {
+    background: #213232;
+    color: #ffffff;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background: var(--card-bg);
+    padding: 10px 20px;
+    border-radius: 5px;
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.profile-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #281818;
+    border-radius: 4px;
+}
+
+.error { color: #4f3434; font-size: 0.8rem; height: 1em; }
+
+@media (min-width: 768px) {
+    .skill-item {
+        flex: 1 1 calc(33.333% - 10px);
+    }
+}
+section {
+    width: 100%;
+}
+
+button, nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+.skill-item {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+    #theme-toggle:hover {
+    box-shadow: 0 0 10px var(--accent-color);
+    cursor: pointer;
+}
+nav a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+    text-shadow: 0 0 8px var(--accent-color);
+}
+
+.skill-item {
+    background: var(--card-bg);
+    padding: 10px 20px;
+    border-radius: 5px;
+    flex: 1 1 100%;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0,0,0,0.6);
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid var(--accent-color);
+    box-shadow: 0 0 20px var(--accent-color);
+}
+#theme-toggle {
+    background: transparent;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 12px var(--accent-color);
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.about-box {
+  background: var(--card-bg);       /* matches your theme card background */
+  color: var(--text-color);         /* ensures readability */
+    padding: 40px 20px;
+    border-radius: 10px;
+  box-shadow: 0 0 15px var(--accent-color); /* glowing accent */
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.about-box h2 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px var(--accent-color);
+}
+
+.about-box p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
